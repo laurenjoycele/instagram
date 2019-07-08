@@ -17,7 +17,6 @@
 		975D466722D3FD0100BC25CC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 975D466622D3FD0100BC25CC /* main.m */; };
 		975D467122D3FD0100BC25CC /* instagram_laurenTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 975D467022D3FD0100BC25CC /* instagram_laurenTests.m */; };
 		975D467C22D3FD0100BC25CC /* instagram_laurenUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 975D467B22D3FD0100BC25CC /* instagram_laurenUITests.m */; };
-		9767597D22D40A7300C0EB64 /* instagram_assets in Resources */ = {isa = PBXBuildFile; fileRef = 9767597C22D40A7300C0EB64 /* instagram_assets */; };
 		C05075EF9B6A3417B2A6A597 /* Pods_instagram_lauren.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D540A8584D5C95FC175AAA5 /* Pods_instagram_lauren.framework */; };
 /* End PBXBuildFile section */
 
@@ -63,7 +62,6 @@
 		975D467722D3FD0100BC25CC /* instagram-laurenUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "instagram-laurenUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		975D467B22D3FD0100BC25CC /* instagram_laurenUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = instagram_laurenUITests.m; sourceTree = "<group>"; };
 		975D467D22D3FD0100BC25CC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9767597C22D40A7300C0EB64 /* instagram_assets */ = {isa = PBXFileReference; lastKnownFileType = folder; name = instagram_assets; path = ../../../Downloads/instagram_assets; sourceTree = "<group>"; };
 		CA73542C8407B5C76266FEA8 /* Pods-instagram-lauren.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-instagram-lauren.debug.xcconfig"; path = "Target Support Files/Pods-instagram-lauren/Pods-instagram-lauren.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -138,7 +136,6 @@
 				975D466022D3FD0100BC25CC /* Assets.xcassets */,
 				975D466222D3FD0100BC25CC /* LaunchScreen.storyboard */,
 				975D466522D3FD0100BC25CC /* Info.plist */,
-				9767597C22D40A7300C0EB64 /* instagram_assets */,
 				975D466622D3FD0100BC25CC /* main.m */,
 			);
 			path = "instagram-lauren";
@@ -282,7 +279,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9767597D22D40A7300C0EB64 /* instagram_assets in Resources */,
 				975D466422D3FD0100BC25CC /* LaunchScreen.storyboard in Resources */,
 				975D466122D3FD0100BC25CC /* Assets.xcassets in Resources */,
 				975D465F22D3FD0000BC25CC /* Main.storyboard in Resources */,
