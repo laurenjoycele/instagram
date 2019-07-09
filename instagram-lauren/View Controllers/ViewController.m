@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "Parse/Parse.h"
+#import "AppDelegate.h"
 
 @interface ViewController ()
 @property (weak, nonatomic) IBOutlet UITextField *usernameField;
@@ -65,11 +66,6 @@
 }
 - (IBAction)tapSignup:(id)sender {
     [self registerUser];
-}
-- (IBAction)tapLogout:(id)sender {
-    [PFUser logOutInBackgroundWithBlock:^(NSError * _Nullable error) {
-        // PFUser.current() will now be nil
-    }];
 }
 
 

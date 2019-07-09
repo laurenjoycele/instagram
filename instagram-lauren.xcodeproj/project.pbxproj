@@ -17,6 +17,7 @@
 		975D466722D3FD0100BC25CC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 975D466622D3FD0100BC25CC /* main.m */; };
 		975D467122D3FD0100BC25CC /* instagram_laurenTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 975D467022D3FD0100BC25CC /* instagram_laurenTests.m */; };
 		975D467C22D3FD0100BC25CC /* instagram_laurenUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 975D467B22D3FD0100BC25CC /* instagram_laurenUITests.m */; };
+		979486AA22D5402B00E90DBD /* homeScreenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 979486A922D5402B00E90DBD /* homeScreenViewController.m */; };
 		C05075EF9B6A3417B2A6A597 /* Pods_instagram_lauren.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D540A8584D5C95FC175AAA5 /* Pods_instagram_lauren.framework */; };
 /* End PBXBuildFile section */
 
@@ -62,6 +63,8 @@
 		975D467722D3FD0100BC25CC /* instagram-laurenUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "instagram-laurenUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		975D467B22D3FD0100BC25CC /* instagram_laurenUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = instagram_laurenUITests.m; sourceTree = "<group>"; };
 		975D467D22D3FD0100BC25CC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		979486A822D5402B00E90DBD /* homeScreenViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = homeScreenViewController.h; sourceTree = "<group>"; };
+		979486A922D5402B00E90DBD /* homeScreenViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = homeScreenViewController.m; sourceTree = "<group>"; };
 		CA73542C8407B5C76266FEA8 /* Pods-instagram-lauren.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-instagram-lauren.debug.xcconfig"; path = "Target Support Files/Pods-instagram-lauren/Pods-instagram-lauren.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -163,6 +166,8 @@
 			children = (
 				975D465A22D3FD0000BC25CC /* ViewController.h */,
 				975D465B22D3FD0000BC25CC /* ViewController.m */,
+				979486A822D5402B00E90DBD /* homeScreenViewController.h */,
+				979486A922D5402B00E90DBD /* homeScreenViewController.m */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -401,6 +406,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				975D465C22D3FD0000BC25CC /* ViewController.m in Sources */,
+				979486AA22D5402B00E90DBD /* homeScreenViewController.m in Sources */,
 				975D466722D3FD0100BC25CC /* main.m in Sources */,
 				975D465922D3FD0000BC25CC /* AppDelegate.m in Sources */,
 			);
