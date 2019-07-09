@@ -130,13 +130,12 @@
 			children = (
 				975D465722D3FD0000BC25CC /* AppDelegate.h */,
 				975D465822D3FD0000BC25CC /* AppDelegate.m */,
-				975D465A22D3FD0000BC25CC /* ViewController.h */,
-				975D465B22D3FD0000BC25CC /* ViewController.m */,
 				975D465D22D3FD0000BC25CC /* Main.storyboard */,
 				975D466022D3FD0100BC25CC /* Assets.xcassets */,
 				975D466222D3FD0100BC25CC /* LaunchScreen.storyboard */,
 				975D466522D3FD0100BC25CC /* Info.plist */,
 				975D466622D3FD0100BC25CC /* main.m */,
+				9767597E22D4187A00C0EB64 /* View Controllers */,
 			);
 			path = "instagram-lauren";
 			sourceTree = "<group>";
@@ -157,6 +156,15 @@
 				975D467D22D3FD0100BC25CC /* Info.plist */,
 			);
 			path = "instagram-laurenUITests";
+			sourceTree = "<group>";
+		};
+		9767597E22D4187A00C0EB64 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				975D465A22D3FD0000BC25CC /* ViewController.h */,
+				975D465B22D3FD0000BC25CC /* ViewController.m */,
+			);
+			path = "View Controllers";
 			sourceTree = "<group>";
 		};
 		EB6D6D1080E8F07EAE6A2A21 /* Pods */ = {
