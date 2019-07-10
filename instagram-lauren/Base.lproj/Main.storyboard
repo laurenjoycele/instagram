@@ -127,6 +127,11 @@
                                 <action selector="tapLogout:" destination="ZmI-z5-4og" id="bEy-YL-7F1"/>
                             </connections>
                         </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="Item" image="insta_camera_btn" id="fod-g6-nIo">
+                            <connections>
+                                <action selector="tapCameraButtonToCompose:" destination="ZmI-z5-4og" id="O91-9Y-115"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="O5Q-xt-evQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -200,6 +205,7 @@
     </scenes>
     <resources>
         <image name="feed_tab" width="25" height="25"/>
+        <image name="insta_camera_btn" width="25" height="25"/>
         <image name="profile_tab" width="25" height="25"/>
     </resources>
 </document>

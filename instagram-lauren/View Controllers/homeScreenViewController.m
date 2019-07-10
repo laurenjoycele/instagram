@@ -9,6 +9,11 @@
 #import "Parse/Parse.h"
 #import "AppDelegate.h"
 #import "homeScreenViewController.h"
+#import <UIKit/UIKit.h> //needed for accessing camera
+
+//needed for accessing camera (taking a photo & selecting photo from camera roll)
+@interface FeedViewController : UIViewController <UITableViewDelegate, UITableViewDataSource, UIImagePickerControllerDelegate, UINavigationControllerDelegate>
+@end
 
 @implementation homeScreenViewController
 - (IBAction)tapLogout:(id)sender {
@@ -22,7 +27,42 @@
         //takes user back to login screen (ViewController) from home screen when user taps on logout button
         appDelegate.window.rootViewController = loginViewController;
     }];
+};
+- (IBAction)tapCameraButtonToCompose:(id)sender {
+    //instantiate UIImagePickerController
+    UIImagePickerController *imagePickerVC = [UIImagePickerController new];
+    imagePickerVC.delegate = self;
+    imagePickerVC.allowsEditing = YES;
+    //imagePickerVC.sourceType = UIImagePickerControllerSourceTypeCamera;
+    [self presentViewController:imagePickerVC animated:YES completion:nil];
+    
+    //check if camera is supported on device
+    if ([UIImagePickerController isSourceTypeAvailable:UIImagePickerControllerSourceTypeCamera]) {
+        imagePickerVC.sourceType = UIImagePickerControllerSourceTypeCamera;
+    }
+    else {
+        NSLog(@"Camera 🚫 available so we will use photo library instead");
+        imagePickerVC.sourceType = UIImagePickerControllerSourceTypePhotoLibrary;
+    }
 }
+
+//implement delegate method
+//When the user finishes taking the picture, UIImagePickerController returns a dictionary that contains the image and some other meta data
+- (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary<NSString *,id> *)info {
+    
+    // Get the image captured by the UIImagePickerController
+    UIImage *originalImage = info[UIImagePickerControllerOriginalImage];
+    UIImage *editedImage = info[UIImagePickerControllerEditedImage];
+    
+    // Do something with the images (based on your use case)
+    
+    // Dismiss UIImagePickerController to go back to your original view controller
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
+
+
+
+
 
 
 
