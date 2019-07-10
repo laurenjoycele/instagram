@@ -10,6 +10,7 @@
 #import "AppDelegate.h"
 #import "homeScreenViewController.h"
 #import <UIKit/UIKit.h> //needed for accessing camera
+#import "postViewController.h"
 
 //needed for accessing camera (taking a photo & selecting photo from camera roll)
 @interface FeedViewController : UIViewController <UITableViewDelegate, UITableViewDataSource, UIImagePickerControllerDelegate, UINavigationControllerDelegate>
@@ -54,10 +55,20 @@
     UIImage *originalImage = info[UIImagePickerControllerOriginalImage];
     UIImage *editedImage = info[UIImagePickerControllerEditedImage];
     
-    // Do something with the images (based on your use case)
     
+    // to pass the selected image to the post view controller, set
+    self.selectedImage = originalImage;
     // Dismiss UIImagePickerController to go back to your original view controller
-    [self dismissViewControllerAnimated:YES completion:nil];
+    [self dismissViewControllerAnimated:YES completion: ^(){[self performSegueWithIdentifier:@"postSegue" sender:nil];}];
+    
+}
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    if([@"postSegue" isEqualToString:segue.identifier]) {
+        UINavigationController *navigationController = [segue destinationViewController];
+        PostViewController *controller = (PostViewController*)navigationController.topViewController;
+        controller.chosenImage = self.selectedImage;
+    }
 }
 
 
