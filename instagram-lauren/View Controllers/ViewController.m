@@ -31,10 +31,11 @@
     
     // set user properties
     newUser.username = self.usernameField.text;
-    newUser.email = self.emailField.text;
+    newUser.email = self.emailField.text; //when testing, be sure to include @___.com
     newUser.password = self.passwordField.text;
     
     // call sign up function on the object
+    //checks if new account can be successfully made
     [newUser signUpInBackgroundWithBlock:^(BOOL succeeded, NSError * error) {
         if (error != nil) {
             NSLog(@"Error: %@", error.localizedDescription);
@@ -50,14 +51,14 @@
     NSString *username = self.usernameField.text;
     NSString *password = self.passwordField.text;
     
+    //check if user login was valid based on username and password
     [PFUser logInWithUsernameInBackground:username password:password block:^(PFUser * user, NSError *  error) {
         if (error != nil) {
             NSLog(@"User log in failed: %@", error.localizedDescription);
         } else {
             NSLog(@"User logged in successfully");
+             // display view controller that needs to shown after successful login
              [self performSegueWithIdentifier:@"loginSegue" sender:nil];
-            
-            // display view controller that needs to shown after successful login
         }
     }];
 }

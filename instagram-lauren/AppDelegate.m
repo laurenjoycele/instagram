@@ -36,6 +36,15 @@
         }
     }];
     
+    //after login, Parse caches logged in user object for convenient access throughout app.
+    //checks if there's a current user in Parse cache or not
+    if (PFUser.currentUser) {  //PFUser.currentUser gets current user
+        //cached user already present so directly load the Home view controller w/o asking the user to login again
+        UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+        //"AuthenticatedViewController" in storyboard is labeled as the Storyboard ID for the homeScreenViewController's navigation controller
+        self.window.rootViewController = [storyboard instantiateViewControllerWithIdentifier:@"AuthenticatedViewController"];
+    }
+    
     return YES;
 }
 
