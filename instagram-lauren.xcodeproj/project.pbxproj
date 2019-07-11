@@ -11,6 +11,7 @@
 		5A97D270CA2035DF4A799C0D /* Pods_instagram_laurenTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D9C7A911D4E7F1370593685 /* Pods_instagram_laurenTests.framework */; };
 		973E92F422D67ACC00197854 /* Post.m in Sources */ = {isa = PBXBuildFile; fileRef = 973E92F322D67ACC00197854 /* Post.m */; };
 		973E92F722D6942200197854 /* PostViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 973E92F622D6942200197854 /* PostViewController.m */; };
+		97439E5922D7DFA600F2D818 /* DetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 97439E5822D7DFA600F2D818 /* DetailsViewController.m */; };
 		975D465922D3FD0000BC25CC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 975D465822D3FD0000BC25CC /* AppDelegate.m */; };
 		975D465C22D3FD0000BC25CC /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 975D465B22D3FD0000BC25CC /* ViewController.m */; };
 		975D465F22D3FD0000BC25CC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 975D465D22D3FD0000BC25CC /* Main.storyboard */; };
@@ -54,6 +55,8 @@
 		973E92F322D67ACC00197854 /* Post.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Post.m; sourceTree = "<group>"; };
 		973E92F522D6942200197854 /* PostViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PostViewController.h; sourceTree = "<group>"; };
 		973E92F622D6942200197854 /* PostViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PostViewController.m; sourceTree = "<group>"; };
+		97439E5722D7DFA600F2D818 /* DetailsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailsViewController.h; sourceTree = "<group>"; };
+		97439E5822D7DFA600F2D818 /* DetailsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailsViewController.m; sourceTree = "<group>"; };
 		975D465422D3FD0000BC25CC /* instagram-lauren.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "instagram-lauren.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		975D465722D3FD0000BC25CC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		975D465822D3FD0000BC25CC /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -199,6 +202,8 @@
 				973E92F622D6942200197854 /* PostViewController.m */,
 				97E77EF722D795FA0073E1EB /* HomeScreenViewController.h */,
 				97E77EF822D795FA0073E1EB /* HomeScreenViewController.m */,
+				97439E5722D7DFA600F2D818 /* DetailsViewController.h */,
+				97439E5822D7DFA600F2D818 /* DetailsViewController.m */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -443,6 +448,7 @@
 				97B026BC22D7AD0B00FCAB8A /* PostCell.m in Sources */,
 				975D465922D3FD0000BC25CC /* AppDelegate.m in Sources */,
 				97E77EF922D795FA0073E1EB /* HomeScreenViewController.m in Sources */,
+				97439E5922D7DFA600F2D818 /* DetailsViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

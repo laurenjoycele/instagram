@@ -31,6 +31,8 @@
     newPost.caption = caption;
     newPost.likeCount = @(0);
     newPost.commentCount = @(0);
+    NSString *dateString = [NSDateFormatter localizedStringFromDate:newPost.createdAt dateStyle:NSDateFormatterShortStyle timeStyle:NSDateFormatterFullStyle];
+   
     
     [newPost saveInBackgroundWithBlock: completion];
 }

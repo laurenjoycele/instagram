@@ -1,5 +1,5 @@
 //
-//  HomeScreenViewController.h
+//  DetailsViewController.h
 //  instagram-lauren
 //
 //  Created by laurenjle on 7/11/19.
@@ -10,10 +10,9 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface HomeScreenViewController : UIViewController
-@property (strong, nonatomic) UIImage *selectedImage;
-
-
+@interface DetailsViewController : UIViewController
+@property (weak, nonatomic) IBOutlet UILabel *datePosted;
+@property(strong, nonatomic) NSString *timePostWasMade;
 @end
 
 NS_ASSUME_NONNULL_END

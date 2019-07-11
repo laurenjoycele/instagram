@@ -15,6 +15,7 @@
 #import <UIKit/UIKit.h> //needed for accessing camera
 #import "PostViewController.h"
 #import "PostCell.h"
+#import "DetailsViewController.h"
 
 @interface HomeScreenViewController () <UITableViewDelegate, UITableViewDataSource, UIImagePickerControllerDelegate, UINavigationControllerDelegate>
 @property (strong, nonatomic) NSArray *myPosts;
@@ -59,7 +60,14 @@
     [self.tableView insertSubview:refreshControl atIndex:0];
     
     
+    
 }
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    [self performSegueWithIdentifier:@"detailsSegue" sender:self.myPosts[indexPath.row]];
+}
+
+
 
 //use for refresh control
 // Makes a network request to get updated data
@@ -166,6 +174,12 @@
             
             controller.chosenImage = self.selectedImage;
             
+        } else if ([@"detailsSegue" isEqualToString:segue.identifier]) {
+            DetailsViewController *vc = [segue destinationViewController];
+            //sender is of type id so make it of detailsViewController
+            Post *postSent = (Post *)sender;
+            NSString *dateString = [NSDateFormatter localizedStringFromDate:postSent.createdAt dateStyle:NSDateFormatterShortStyle  timeStyle:NSDateFormatterFullStyle];
+            vc.timePostWasMade = dateString;
         }
 }
     
