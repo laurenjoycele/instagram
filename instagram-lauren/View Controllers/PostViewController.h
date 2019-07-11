@@ -12,6 +12,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface PostViewController : UIViewController
 @property (strong, nonatomic) UIImage *chosenImage;
+- (UIImage *)resizeImage:(UIImage *)image withSize:(CGSize)size;
 @end
 
 NS_ASSUME_NONNULL_END

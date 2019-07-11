@@ -8,6 +8,7 @@
 #import "ViewController.h"
 #import "Parse/Parse.h"
 #import "AppDelegate.h"
+#import "../Post.h"
 #import "homeScreenViewController.h"
 #import <UIKit/UIKit.h> //needed for accessing camera
 #import "postViewController.h"
@@ -28,6 +29,7 @@
         //takes user back to login screen (ViewController) from home screen when user taps on logout button
         appDelegate.window.rootViewController = loginViewController;
     }];
+   
 };
 - (IBAction)tapCameraButtonToCompose:(id)sender {
     //instantiate UIImagePickerController

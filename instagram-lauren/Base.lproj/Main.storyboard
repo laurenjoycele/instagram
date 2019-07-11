@@ -165,25 +165,31 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ns9-5P-hzZ">
-                                <rect key="frame" x="43" y="247" width="334" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="z1x-pV-KvE">
                                 <rect key="frame" x="20" y="100" width="146" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1Rm-j1-oyU">
+                                <rect key="frame" x="20" y="258" width="374" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="Psb-MX-JA7"/>
                     </view>
-                    <navigationItem key="navigationItem" id="RSD-ug-foa"/>
+                    <navigationItem key="navigationItem" id="RSD-ug-foa">
+                        <barButtonItem key="rightBarButtonItem" title="Share" id="UKB-al-0kx">
+                            <connections>
+                                <action selector="tapShare:" destination="Dpc-fg-eux" id="nOs-21-bFB"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="aboutToPostImage" destination="z1x-pV-KvE" id="nVT-a0-Asc"/>
-                        <outlet property="captionLabel" destination="ns9-5P-hzZ" id="NVh-1k-mIc"/>
+                        <outlet property="captionField" destination="1Rm-j1-oyU" id="4kY-Op-S52"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6Vv-dB-VSt" userLabel="First Responder" sceneMemberID="firstResponder"/>

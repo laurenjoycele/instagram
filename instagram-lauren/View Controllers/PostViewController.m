@@ -8,20 +8,41 @@
 
 #import "PostViewController.h"
 #import "homeScreenViewController.h"
+#import "Post.h"
 
 @interface PostViewController ()
 @property (weak, nonatomic) IBOutlet UIImageView *aboutToPostImage;
-@property (weak, nonatomic) IBOutlet UILabel *captionLabel;
+@property (weak, nonatomic) IBOutlet UITextField *captionField;
+
+
 
 @end
 
 @implementation PostViewController
-
+- (UIImage *)resizeImage:(UIImage *)image withSize:(CGSize)size {
+    UIImageView *resizeImageView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, size.width, size.height)];
+    
+    resizeImageView.contentMode = UIViewContentModeScaleAspectFill;
+    resizeImageView.image = image;
+    
+    UIGraphicsBeginImageContext(size);
+    [resizeImageView.layer renderInContext:UIGraphicsGetCurrentContext()];
+    UIImage *newImage = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    
+    return newImage;
+}
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.aboutToPostImage.image = _chosenImage; //self.aboutToPostImage.image = self.chosenImage;
+    self.aboutToPostImage.image = self.chosenImage;
     // Do any additional setup after loading the view.
     
+}
+- (IBAction)tapShare:(id)sender {
+    [Post postUserImage:[self resizeImage:self.aboutToPostImage.image withSize:CGSizeMake(200, 200)] withCaption:self.captionField.text withCompletion:^(BOOL succeeded, NSError * _Nullable error) {
+        [self dismissViewControllerAnimated:YES completion:nil];
+    }];
+
 }
 
 /*
