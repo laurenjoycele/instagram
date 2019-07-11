@@ -50,9 +50,41 @@
         }
     }];
     
+    //for refresh control
+    //initialize refresh control object
+    UIRefreshControl *refreshControl = [[UIRefreshControl alloc] init];
+    //bind action to refresh control
+    [refreshControl addTarget:self action:@selector(beginRefresh:) forControlEvents:UIControlEventValueChanged];
+    //add refresh control to table view
+    [self.tableView insertSubview:refreshControl atIndex:0];
+    
     
 }
 
+//use for refresh control
+// Makes a network request to get updated data
+// Updates the tableView with the new data
+// Hides the RefreshControl
+- (void)beginRefresh:(UIRefreshControl *)refreshControl {
+    
+    PFQuery *postQuery = [Post query];
+    [postQuery orderByDescending:@"createdAt"];
+    [postQuery includeKey:@"author"];
+    postQuery.limit = 20;
+    
+    //display posts in home screen
+    // fetch data asynchronously
+    [postQuery findObjectsInBackgroundWithBlock:^(NSArray<Post *> * _Nullable posts, NSError * _Nullable error) {
+        if (posts) {
+            // do something with the data fetched
+            self.myPosts = posts;
+            [self.tableView reloadData];
+        }
+        else {
+            // handle error
+        }
+    }];
+}
 
 - (IBAction)tapLogout:(id)sender {
     
@@ -77,6 +109,7 @@
     UIImagePickerController *imagePickerVC = [UIImagePickerController new];
     imagePickerVC.delegate = self;
     imagePickerVC.allowsEditing = YES;
+    
     
     //imagePickerVC.sourceType = UIImagePickerControllerSourceTypeCamera;
     [self presentViewController:imagePickerVC animated:YES completion:nil];
@@ -136,48 +169,22 @@
         }
 }
     
-    
-    //
-    
-//-(nonnull UITableViewCell *)tableView:(nonnull UITableView *)tableView cellForRowAtIndexPath:(nonnull NSIndexPath *)indexPath {
-//
-//
-//    //reuse cells
-//    PostCell *cell = [tableView dequeueReusableCellWithIdentifier:@"PostCell"];
-//    Post *post = self.myPosts[indexPath.row];
-//
-//    cell.post = post;
-//    //outlets and data
-//    cell.captionLabel.text = post.caption;
-//    cell.usernameLabel.text = post.author.username;
-//    cell.likeCount.text = post.likeCount;
-//    //do we need to set pic here?
-//    PFFileObject *i = post.image;
-//    [i getDataInBackgroundWithBlock:^(NSData * _Nullable data, NSError * _Nullable error) {
-//        cell.postImageView.image = [UIImage imageWithData:data];
-//    }];
-//
-//    //dont know why cant access any PostCell properties
-//    return cell;
-//
-//}
-//-(NSInteger)tableView:(nonnull UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-//    return self.myPosts.count;
-//}
+
 
 - (nonnull UITableViewCell *)tableView:(nonnull UITableView *)tableView cellForRowAtIndexPath:(nonnull NSIndexPath *)indexPath {
         //reuse cells
         PostCell *cell = [tableView dequeueReusableCellWithIdentifier:@"PostCell"];
         Post *post = self.myPosts[indexPath.row];
     
+        //outlets from PostCell.h and data from Post.h
         cell.post = post;
         //outlets and data
         cell.captionLabel.text = post.caption;
         cell.usernameLabel.text = post.author.username;
-    
         //make sure to convert number into NSString, otherwise posts won't show up in home timeline
-        cell.likeCount.text = [NSString stringWithFormat:@"%d",post.likeCount];
+        cell.likeCount.text = [NSString stringWithFormat:@"%i",post.likeCount];
     
+        //pod ParseUI has issues importing so convert the
         // create reference to post image of type PFFileObject
         PFFileObject *imagePF = post.image;
         //get data from PFFileObject and turn it into an UIImage
