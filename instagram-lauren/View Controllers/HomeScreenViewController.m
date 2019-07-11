@@ -180,6 +180,10 @@
             Post *postSent = (Post *)sender;
             NSString *dateString = [NSDateFormatter localizedStringFromDate:postSent.createdAt dateStyle:NSDateFormatterShortStyle  timeStyle:NSDateFormatterFullStyle];
             vc.timePostWasMade = dateString;
+            
+            
+            NSString *captionString = (NSString*)postSent.caption;
+            vc.captionBox = captionString;
         }
 }
     

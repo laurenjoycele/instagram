@@ -13,6 +13,11 @@ NS_ASSUME_NONNULL_BEGIN
 @interface DetailsViewController : UIViewController
 @property (weak, nonatomic) IBOutlet UILabel *datePosted;
 @property(strong, nonatomic) NSString *timePostWasMade;
+
+
+@property (weak, nonatomic) IBOutlet UILabel *captionBoxLabel;
+@property(strong, nonatomic) NSString *captionBox;
+
 @end
 
 NS_ASSUME_NONNULL_END

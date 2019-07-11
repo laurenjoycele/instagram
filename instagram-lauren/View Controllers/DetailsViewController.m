@@ -18,6 +18,8 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     self.datePosted.text = self.timePostWasMade;
+    
+    self.captionBoxLabel.text=self.captionBox;
 }
 
 /*
