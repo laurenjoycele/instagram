@@ -7,7 +7,7 @@
 //
 
 #import "PostViewController.h"
-#import "homeScreenViewController.h"
+#import "HomeScreenViewController.h"
 #import "Post.h"
 
 @interface PostViewController ()
@@ -42,7 +42,6 @@
     [Post postUserImage:[self resizeImage:self.aboutToPostImage.image withSize:CGSizeMake(200, 200)] withCaption:self.captionField.text withCompletion:^(BOOL succeeded, NSError * _Nullable error) {
         [self dismissViewControllerAnimated:YES completion:nil];
     }];
-
 }
 
 /*
