@@ -12,6 +12,9 @@
 		973E92F422D67ACC00197854 /* Post.m in Sources */ = {isa = PBXBuildFile; fileRef = 973E92F322D67ACC00197854 /* Post.m */; };
 		973E92F722D6942200197854 /* PostViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 973E92F622D6942200197854 /* PostViewController.m */; };
 		97439E5922D7DFA600F2D818 /* DetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 97439E5822D7DFA600F2D818 /* DetailsViewController.m */; };
+		97439E5B22D7EE7C00F2D818 /* icons8-heart-50.png in Resources */ = {isa = PBXBuildFile; fileRef = 97439E5A22D7EE7C00F2D818 /* icons8-heart-50.png */; };
+		97439E5D22D7EED000F2D818 /* icons8-topic-50.png in Resources */ = {isa = PBXBuildFile; fileRef = 97439E5C22D7EED000F2D818 /* icons8-topic-50.png */; };
+		97439E5F22D7EF0700F2D818 /* icons8-paper-plane-50.png in Resources */ = {isa = PBXBuildFile; fileRef = 97439E5E22D7EF0700F2D818 /* icons8-paper-plane-50.png */; };
 		975D465922D3FD0000BC25CC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 975D465822D3FD0000BC25CC /* AppDelegate.m */; };
 		975D465C22D3FD0000BC25CC /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 975D465B22D3FD0000BC25CC /* ViewController.m */; };
 		975D465F22D3FD0000BC25CC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 975D465D22D3FD0000BC25CC /* Main.storyboard */; };
@@ -57,6 +60,9 @@
 		973E92F622D6942200197854 /* PostViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PostViewController.m; sourceTree = "<group>"; };
 		97439E5722D7DFA600F2D818 /* DetailsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailsViewController.h; sourceTree = "<group>"; };
 		97439E5822D7DFA600F2D818 /* DetailsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailsViewController.m; sourceTree = "<group>"; };
+		97439E5A22D7EE7C00F2D818 /* icons8-heart-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "icons8-heart-50.png"; path = "../../../Downloads/icons8-heart-50.png"; sourceTree = "<group>"; };
+		97439E5C22D7EED000F2D818 /* icons8-topic-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "icons8-topic-50.png"; path = "../../../Downloads/icons8-topic-50.png"; sourceTree = "<group>"; };
+		97439E5E22D7EF0700F2D818 /* icons8-paper-plane-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "icons8-paper-plane-50.png"; path = "../../../Downloads/icons8-paper-plane-50.png"; sourceTree = "<group>"; };
 		975D465422D3FD0000BC25CC /* instagram-lauren.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "instagram-lauren.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		975D465722D3FD0000BC25CC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		975D465822D3FD0000BC25CC /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -167,6 +173,9 @@
 				975D465722D3FD0000BC25CC /* AppDelegate.h */,
 				975D465822D3FD0000BC25CC /* AppDelegate.m */,
 				975D465D22D3FD0000BC25CC /* Main.storyboard */,
+				97439E5E22D7EF0700F2D818 /* icons8-paper-plane-50.png */,
+				97439E5A22D7EE7C00F2D818 /* icons8-heart-50.png */,
+				97439E5C22D7EED000F2D818 /* icons8-topic-50.png */,
 				975D466022D3FD0100BC25CC /* Assets.xcassets */,
 				975D466222D3FD0100BC25CC /* LaunchScreen.storyboard */,
 				975D466522D3FD0100BC25CC /* Info.plist */,
@@ -328,8 +337,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				97439E5F22D7EF0700F2D818 /* icons8-paper-plane-50.png in Resources */,
 				975D466422D3FD0100BC25CC /* LaunchScreen.storyboard in Resources */,
+				97439E5B22D7EE7C00F2D818 /* icons8-heart-50.png in Resources */,
 				975D466122D3FD0100BC25CC /* Assets.xcassets in Resources */,
+				97439E5D22D7EED000F2D818 /* icons8-topic-50.png in Resources */,
 				975D465F22D3FD0000BC25CC /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
