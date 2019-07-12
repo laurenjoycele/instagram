@@ -18,12 +18,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Login" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Bt-oJ-rcX">
-                                <rect key="frame" x="10" y="399" width="394" height="72"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="60"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="K5w-QR-9rN">
                                 <rect key="frame" x="20" y="521" width="368" height="30"/>
                                 <nil key="textColor"/>
@@ -63,23 +57,30 @@
                                     </button>
                                 </subviews>
                             </stackView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="IDg-uL-WbH">
+                                <rect key="frame" x="62" y="244" width="284" height="185"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="185" id="MeB-Db-dWM"/>
+                                    <constraint firstAttribute="width" constant="284" id="kt0-m8-ajH"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <gestureRecognizers/>
                         <constraints>
+                            <constraint firstItem="IDg-uL-WbH" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="62" id="1Em-ET-dpv"/>
                             <constraint firstItem="T38-do-xqP" firstAttribute="top" secondItem="K5w-QR-9rN" secondAttribute="bottom" constant="45" id="4Qk-nZ-aPa"/>
                             <constraint firstItem="vsg-8V-sxT" firstAttribute="top" secondItem="maU-mJ-Btu" secondAttribute="bottom" constant="100" id="E8D-nM-okl"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="vsg-8V-sxT" secondAttribute="bottom" constant="20" id="GUn-7o-FAw"/>
                             <constraint firstItem="maU-mJ-Btu" firstAttribute="top" secondItem="T38-do-xqP" secondAttribute="bottom" constant="44" id="QAz-gy-0jp"/>
                             <constraint firstItem="K5w-QR-9rN" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="QHB-kK-s5L"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="K5w-QR-9rN" secondAttribute="trailing" constant="26" id="Qh7-ya-1h2"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="IDg-uL-WbH" secondAttribute="trailing" constant="68" id="ThI-JJ-Qws"/>
+                            <constraint firstItem="K5w-QR-9rN" firstAttribute="top" secondItem="IDg-uL-WbH" secondAttribute="bottom" constant="92" id="Wx1-Pd-kpT"/>
                             <constraint firstItem="maU-mJ-Btu" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="XNs-4B-QnG"/>
                             <constraint firstItem="vsg-8V-sxT" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Xsg-5O-Etp"/>
-                            <constraint firstItem="K5w-QR-9rN" firstAttribute="top" secondItem="3Bt-oJ-rcX" secondAttribute="bottom" constant="50" id="Y9P-uy-05H"/>
                             <constraint firstItem="T38-do-xqP" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="ePa-OB-J0i"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="3Bt-oJ-rcX" secondAttribute="trailing" constant="10" id="eRi-Wb-gRg"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="maU-mJ-Btu" secondAttribute="trailing" constant="26" id="gM9-Fz-Ddd"/>
-                            <constraint firstItem="3Bt-oJ-rcX" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="ink-Gi-t9V"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="T38-do-xqP" secondAttribute="trailing" constant="26" id="u8w-1Q-7rH"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -89,6 +90,7 @@
                     </view>
                     <connections>
                         <outlet property="emailField" destination="maU-mJ-Btu" id="Rdf-A6-GOi"/>
+                        <outlet property="loginLettersView" destination="IDg-uL-WbH" id="5yV-b6-OQf"/>
                         <outlet property="passwordField" destination="T38-do-xqP" id="M9T-rq-AxJ"/>
                         <outlet property="usernameField" destination="K5w-QR-9rN" id="Ahy-13-Egr"/>
                         <segue destination="9PJ-Fz-LbX" kind="presentation" identifier="loginSegue" id="xw4-Bi-8kV"/>
@@ -158,7 +160,7 @@
                                                 <constraint firstAttribute="height" constant="23" id="L8y-lP-f2O"/>
                                                 <constraint firstAttribute="width" constant="24" id="SIk-ps-CGI"/>
                                             </constraints>
-                                            <state key="normal" title="Send" image="icons8-paper-plane-50.png"/>
+                                            <state key="normal" title="Send" image="icons8-ios-50.png"/>
                                         </button>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Username" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DnF-GR-OeH">
                                             <rect key="frame" x="16" y="416" width="378" height="21"/>
@@ -453,7 +455,7 @@
     <resources>
         <image name="feed_tab" width="25" height="25"/>
         <image name="icons8-heart-50.png" width="50" height="50"/>
-        <image name="icons8-paper-plane-50.png" width="50" height="50"/>
+        <image name="icons8-ios-50.png" width="50" height="50"/>
         <image name="icons8-topic-50.png" width="50" height="50"/>
         <image name="insta_camera_btn" width="25" height="25"/>
         <image name="profile_tab" width="25" height="25"/>

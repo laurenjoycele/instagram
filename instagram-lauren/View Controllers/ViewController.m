@@ -15,11 +15,17 @@
 @property (weak, nonatomic) IBOutlet UITextField *emailField;
 @property (weak, nonatomic) IBOutlet UITextField *passwordField;
 
+
 @end
 
 @implementation ViewController
+@synthesize loginLettersView; //image of login screen
 
 - (void)viewDidLoad {
+    //for image of login screen
+    UIImage *image1 = [UIImage imageNamed:@"letters_login.jpg"];
+    [loginLettersView setImage:image1];
+                       
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
