@@ -131,9 +131,12 @@
     }
     
 }
+
+//use for dismissing keyboard after tapping on screen
+
     
-    
-    
+
+
     
     //implement delegate method
     

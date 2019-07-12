@@ -44,6 +44,10 @@
         [self dismissViewControllerAnimated:YES completion:nil];
     }];
 }
+//dismiss keyboard after typing caption
+- (IBAction)onTapPost:(id)sender {
+    [self.view endEditing:YES];
+}
 
 /*
 #pragma mark - Navigation

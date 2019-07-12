@@ -70,5 +70,11 @@
     [self registerUser];
 }
 
+//dismissing keyboard on login screen
+- (IBAction)onTapLogin:(id)sender {
+    NSLog(@"hello");
+    [self.view endEditing:YES];
+}
+
 
 @end

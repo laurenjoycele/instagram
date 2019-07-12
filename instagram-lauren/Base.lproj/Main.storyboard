@@ -65,6 +65,7 @@
                             </stackView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <gestureRecognizers/>
                         <constraints>
                             <constraint firstItem="T38-do-xqP" firstAttribute="top" secondItem="K5w-QR-9rN" secondAttribute="bottom" constant="45" id="4Qk-nZ-aPa"/>
                             <constraint firstItem="vsg-8V-sxT" firstAttribute="top" secondItem="maU-mJ-Btu" secondAttribute="bottom" constant="100" id="E8D-nM-okl"/>
@@ -82,6 +83,9 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="T38-do-xqP" secondAttribute="trailing" constant="26" id="u8w-1Q-7rH"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="LBM-ur-Vi5" appends="YES" id="A6B-5s-NuL"/>
+                        </connections>
                     </view>
                     <connections>
                         <outlet property="emailField" destination="maU-mJ-Btu" id="Rdf-A6-GOi"/>
@@ -91,6 +95,11 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="LBM-ur-Vi5">
+                    <connections>
+                        <action selector="onTapLogin:" destination="BYZ-38-t0r" id="AsF-go-VFS"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="-700" y="58.928571428571423"/>
         </scene>
@@ -335,12 +344,12 @@
                             </imageView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Caption this..." textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="ZSQ-Mf-MtM">
                                 <rect key="frame" x="20" y="260" width="374" height="545"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <gestureRecognizers/>
                         <constraints>
                             <constraint firstItem="Psb-MX-JA7" firstAttribute="trailing" secondItem="ZSQ-Mf-MtM" secondAttribute="trailing" constant="20" id="3fO-4K-48j"/>
                             <constraint firstItem="Psb-MX-JA7" firstAttribute="bottom" secondItem="ZSQ-Mf-MtM" secondAttribute="bottom" constant="8" id="891-H2-lbX"/>
@@ -351,6 +360,9 @@
                             <constraint firstItem="ZSQ-Mf-MtM" firstAttribute="leading" secondItem="Psb-MX-JA7" secondAttribute="leading" constant="20" id="rSs-TU-mSn"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Psb-MX-JA7"/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="YJd-AW-C7y" appends="YES" id="A2c-NA-eB2"/>
+                        </connections>
                     </view>
                     <navigationItem key="navigationItem" id="RSD-ug-foa">
                         <barButtonItem key="rightBarButtonItem" title="Share" id="UKB-al-0kx">
@@ -365,6 +377,11 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6Vv-dB-VSt" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="YJd-AW-C7y">
+                    <connections>
+                        <action selector="onTapPost:" destination="Dpc-fg-eux" id="jQY-Sm-JeF"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="3286.9565217391305" y="85.714285714285708"/>
         </scene>
