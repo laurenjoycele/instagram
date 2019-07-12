@@ -18,8 +18,11 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     self.datePosted.text = self.timePostWasMade;
-    
     self.captionBoxLabel.text=self.captionBox;
+    
+    //get more than 1 line for caption
+    _captionBoxLabel.lineBreakMode = NSLineBreakByWordWrapping;
+    self.captionBoxLabel.numberOfLines=0;
 }
 
 /*

@@ -12,7 +12,8 @@
 
 @interface PostViewController ()
 @property (weak, nonatomic) IBOutlet UIImageView *aboutToPostImage;
-@property (weak, nonatomic) IBOutlet UITextField *captionField;
+
+@property (weak, nonatomic) IBOutlet UITextView *captionView;
 
 
 
@@ -39,7 +40,7 @@
     
 }
 - (IBAction)tapShare:(id)sender {
-    [Post postUserImage:[self resizeImage:self.aboutToPostImage.image withSize:CGSizeMake(200, 200)] withCaption:self.captionField.text withCompletion:^(BOOL succeeded, NSError * _Nullable error) {
+    [Post postUserImage:[self resizeImage:self.aboutToPostImage.image withSize:CGSizeMake(200, 200)] withCaption:self.captionView.text withCompletion:^(BOOL succeeded, NSError * _Nullable error) {
         [self dismissViewControllerAnimated:YES completion:nil];
     }];
 }

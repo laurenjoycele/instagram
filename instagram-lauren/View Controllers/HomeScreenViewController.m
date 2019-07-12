@@ -202,6 +202,7 @@
         //make sure to convert number into NSString, otherwise posts won't show up in home timeline
         cell.likeCount.text = [NSString stringWithFormat:@"%i",post.likeCount];
     
+        
         //pod ParseUI has issues importing so convert the
         // create reference to post image of type PFFileObject
         PFFileObject *imagePF = post.image;
