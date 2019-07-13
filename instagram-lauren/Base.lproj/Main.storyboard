@@ -139,7 +139,7 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mVm-vD-WlZ">
-                                            <rect key="frame" x="8" y="355" width="28" height="28"/>
+                                            <rect key="frame" x="8" y="396" width="28" height="28"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="28" id="ZN8-O9-CJM"/>
                                                 <constraint firstAttribute="width" constant="28" id="fng-aM-gUq"/>
@@ -147,7 +147,7 @@
                                             <state key="normal" title="Heart" image="icons8-heart-50.png"/>
                                         </button>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qtp-Uh-ekZ">
-                                            <rect key="frame" x="56" y="355" width="30" height="28"/>
+                                            <rect key="frame" x="56" y="396" width="30" height="28"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="28" id="UUw-4P-Ie8"/>
                                                 <constraint firstAttribute="width" constant="30" id="iIN-zS-s2G"/>
@@ -155,7 +155,7 @@
                                             <state key="normal" title="Comment" image="icons8-topic-50.png"/>
                                         </button>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a20-g5-lgq">
-                                            <rect key="frame" x="105" y="357.5" width="24" height="23"/>
+                                            <rect key="frame" x="105" y="398.5" width="24" height="23"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="23" id="L8y-lP-f2O"/>
                                                 <constraint firstAttribute="width" constant="24" id="SIk-ps-CGI"/>
@@ -163,41 +163,52 @@
                                             <state key="normal" title="Send" image="icons8-ios-50.png"/>
                                         </button>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Username" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DnF-GR-OeH">
-                                            <rect key="frame" x="16" y="416" width="378" height="21"/>
+                                            <rect key="frame" x="16" y="457" width="378" height="21"/>
                                             <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="GjD-d4-tvO">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="345"/>
-                                            <gestureRecognizers/>
-                                            <constraints>
-                                                <constraint firstAttribute="height" constant="345" id="RTc-C7-bbF"/>
-                                                <constraint firstAttribute="width" constant="414" id="rGv-s2-GPY"/>
-                                            </constraints>
-                                        </imageView>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qkq-rK-jRc">
-                                            <rect key="frame" x="16" y="391" width="10.5" height="21"/>
+                                            <rect key="frame" x="16" y="432" width="10.5" height="21"/>
                                             <gestureRecognizers/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" text="Likes" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6rt-KM-AZ9">
-                                            <rect key="frame" x="34.5" y="391" width="40" height="21"/>
+                                            <rect key="frame" x="34.5" y="432" width="40" height="21"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Caption" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w60-it-J7E">
-                                            <rect key="frame" x="20" y="436" width="388" height="61.5"/>
+                                            <rect key="frame" x="20" y="477" width="388" height="20.5"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rgk-rI-VWJ">
+                                            <rect key="frame" x="20" y="7" width="42" height="41"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="42" id="0Y6-TX-GkK"/>
+                                                <constraint firstAttribute="height" constant="41" id="3z7-Kx-YTR"/>
+                                            </constraints>
+                                            <state key="normal" image="round profile icon.png"/>
+                                        </button>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="GjD-d4-tvO">
+                                            <rect key="frame" x="0.0" y="57" width="414" height="331"/>
+                                            <gestureRecognizers/>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Username" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Iqe-0u-Jsw">
+                                            <rect key="frame" x="70" y="17" width="84" height="21"/>
+                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
                                     <gestureRecognizers/>
                                     <constraints>
+                                        <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Iqe-0u-Jsw" secondAttribute="trailing" constant="8" id="0zy-p2-AJR"/>
                                         <constraint firstItem="w60-it-J7E" firstAttribute="leading" secondItem="J4S-Og-EIN" secondAttribute="leading" constant="20" id="1Bt-Hd-wx2"/>
                                         <constraint firstItem="DnF-GR-OeH" firstAttribute="top" secondItem="qkq-rK-jRc" secondAttribute="bottom" constant="4" id="279-mL-Q34"/>
                                         <constraint firstItem="qtp-Uh-ekZ" firstAttribute="centerY" secondItem="a20-g5-lgq" secondAttribute="centerY" id="9RH-ah-beV"/>
@@ -206,12 +217,16 @@
                                         <constraint firstItem="mVm-vD-WlZ" firstAttribute="centerY" secondItem="qtp-Uh-ekZ" secondAttribute="centerY" id="JOV-BS-kGl"/>
                                         <constraint firstItem="DnF-GR-OeH" firstAttribute="leading" secondItem="J4S-Og-EIN" secondAttribute="leading" constant="16" id="KMG-Hb-52U"/>
                                         <constraint firstItem="qkq-rK-jRc" firstAttribute="top" secondItem="mVm-vD-WlZ" secondAttribute="bottom" constant="8" id="LfD-fd-0tQ"/>
+                                        <constraint firstItem="GjD-d4-tvO" firstAttribute="top" secondItem="Rgk-rI-VWJ" secondAttribute="bottom" constant="9" id="OiP-cy-CT1"/>
                                         <constraint firstAttribute="trailing" secondItem="DnF-GR-OeH" secondAttribute="trailing" constant="20" id="bBK-Qw-3ZX"/>
                                         <constraint firstAttribute="trailing" secondItem="GjD-d4-tvO" secondAttribute="trailing" id="cwY-hi-7VY"/>
-                                        <constraint firstItem="mVm-vD-WlZ" firstAttribute="top" secondItem="GjD-d4-tvO" secondAttribute="bottom" constant="10" id="i2w-qp-q2G"/>
+                                        <constraint firstItem="Rgk-rI-VWJ" firstAttribute="leading" secondItem="J4S-Og-EIN" secondAttribute="leading" constant="20" id="dqX-0y-Qjo"/>
+                                        <constraint firstItem="mVm-vD-WlZ" firstAttribute="top" secondItem="GjD-d4-tvO" secondAttribute="bottom" constant="8" id="i2w-qp-q2G"/>
                                         <constraint firstItem="6rt-KM-AZ9" firstAttribute="leading" secondItem="qkq-rK-jRc" secondAttribute="trailing" constant="8" id="jZz-RP-heZ"/>
+                                        <constraint firstItem="GjD-d4-tvO" firstAttribute="top" secondItem="Iqe-0u-Jsw" secondAttribute="bottom" constant="19" id="n7w-h3-KP9"/>
+                                        <constraint firstItem="Iqe-0u-Jsw" firstAttribute="leading" secondItem="Rgk-rI-VWJ" secondAttribute="trailing" constant="8" id="oQK-pb-7Iw"/>
                                         <constraint firstAttribute="bottom" secondItem="w60-it-J7E" secondAttribute="bottom" constant="8" id="oWR-Bl-s5M"/>
-                                        <constraint firstItem="GjD-d4-tvO" firstAttribute="top" secondItem="J4S-Og-EIN" secondAttribute="top" id="qIa-5C-h0A"/>
+                                        <constraint firstItem="GjD-d4-tvO" firstAttribute="top" secondItem="J4S-Og-EIN" secondAttribute="top" constant="57" id="qIa-5C-h0A"/>
                                         <constraint firstItem="w60-it-J7E" firstAttribute="top" secondItem="6rt-KM-AZ9" secondAttribute="bottom" constant="24" id="qf9-N3-wot"/>
                                         <constraint firstItem="qkq-rK-jRc" firstAttribute="leading" secondItem="J4S-Og-EIN" secondAttribute="leading" constant="16" id="r0m-ma-idG"/>
                                         <constraint firstItem="GjD-d4-tvO" firstAttribute="leading" secondItem="J4S-Og-EIN" secondAttribute="leading" id="up2-oz-Ueu"/>
@@ -224,6 +239,7 @@
                                     <outlet property="captionLabel" destination="w60-it-J7E" id="Ezw-59-6vw"/>
                                     <outlet property="likeCount" destination="qkq-rK-jRc" id="MMR-RB-aDk"/>
                                     <outlet property="postImageView" destination="GjD-d4-tvO" id="kUQ-DG-JId"/>
+                                    <outlet property="topUsernameLabel" destination="Iqe-0u-Jsw" id="cTR-Le-nP3"/>
                                     <outlet property="usernameLabel" destination="DnF-GR-OeH" id="ini-kh-58o"/>
                                 </connections>
                             </tableViewCell>
@@ -459,5 +475,6 @@
         <image name="icons8-topic-50.png" width="50" height="50"/>
         <image name="insta_camera_btn" width="25" height="25"/>
         <image name="profile_tab" width="25" height="25"/>
+        <image name="round profile icon.png" width="673" height="673"/>
     </resources>
 </document>

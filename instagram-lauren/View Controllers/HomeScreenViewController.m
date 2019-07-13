@@ -202,6 +202,7 @@
         //outlets and data
         cell.captionLabel.text = post.caption;
         cell.usernameLabel.text = post.author.username;
+    cell.topUsernameLabel.text = post.author.username;
         //make sure to convert number into NSString, otherwise posts won't show up in home timeline
         cell.likeCount.text = [NSString stringWithFormat:@"%i",post.likeCount];
     
