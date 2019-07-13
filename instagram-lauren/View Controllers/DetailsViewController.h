@@ -11,7 +11,9 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface DetailsViewController : UIViewController
-@property (weak, nonatomic) IBOutlet UILabel *datePosted;
+//use text field for multiple lines
+@property (weak, nonatomic) IBOutlet UITextField *datePosted;
+
 @property(strong, nonatomic) NSString *timePostWasMade;
 
 

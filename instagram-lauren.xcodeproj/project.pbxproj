@@ -18,6 +18,8 @@
 		97439E7222D94D9F00F2D818 /* insta_login_letters.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 97439E7122D94D9E00F2D818 /* insta_login_letters.jpg */; };
 		97439E7422D94F4300F2D818 /* letters_login.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 97439E7322D94F4300F2D818 /* letters_login.jpg */; };
 		97439E7E22D9528E00F2D818 /* round profile icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 97439E7D22D9528E00F2D818 /* round profile icon.png */; };
+		97439E8722D9676700F2D818 /* ProfileCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 97439E8622D9676700F2D818 /* ProfileCollectionViewController.m */; };
+		97439E8A22D968FA00F2D818 /* ProfilePostCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 97439E8922D968FA00F2D818 /* ProfilePostCollectionViewCell.m */; };
 		975D465922D3FD0000BC25CC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 975D465822D3FD0000BC25CC /* AppDelegate.m */; };
 		975D465C22D3FD0000BC25CC /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 975D465B22D3FD0000BC25CC /* ViewController.m */; };
 		975D465F22D3FD0000BC25CC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 975D465D22D3FD0000BC25CC /* Main.storyboard */; };
@@ -69,6 +71,10 @@
 		97439E7122D94D9E00F2D818 /* insta_login_letters.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = insta_login_letters.jpg; path = ../../../Downloads/insta_login_letters.jpg; sourceTree = "<group>"; };
 		97439E7322D94F4300F2D818 /* letters_login.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = letters_login.jpg; path = ../../../Downloads/letters_login.jpg; sourceTree = "<group>"; };
 		97439E7D22D9528E00F2D818 /* round profile icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "round profile icon.png"; path = "../../../Downloads/round profile icon.png"; sourceTree = "<group>"; };
+		97439E8522D9676700F2D818 /* ProfileCollectionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProfileCollectionViewController.h; sourceTree = "<group>"; };
+		97439E8622D9676700F2D818 /* ProfileCollectionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ProfileCollectionViewController.m; sourceTree = "<group>"; };
+		97439E8822D968FA00F2D818 /* ProfilePostCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProfilePostCollectionViewCell.h; sourceTree = "<group>"; };
+		97439E8922D968FA00F2D818 /* ProfilePostCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ProfilePostCollectionViewCell.m; sourceTree = "<group>"; };
 		975D465422D3FD0000BC25CC /* instagram-lauren.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "instagram-lauren.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		975D465722D3FD0000BC25CC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		975D465822D3FD0000BC25CC /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -144,6 +150,8 @@
 			children = (
 				97B026BB22D7AD0B00FCAB8A /* PostCell.h */,
 				97B026BA22D7AD0B00FCAB8A /* PostCell.m */,
+				97439E8822D968FA00F2D818 /* ProfilePostCollectionViewCell.h */,
+				97439E8922D968FA00F2D818 /* ProfilePostCollectionViewCell.m */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -222,6 +230,8 @@
 				97E77EF822D795FA0073E1EB /* HomeScreenViewController.m */,
 				97439E5722D7DFA600F2D818 /* DetailsViewController.h */,
 				97439E5822D7DFA600F2D818 /* DetailsViewController.m */,
+				97439E8522D9676700F2D818 /* ProfileCollectionViewController.h */,
+				97439E8622D9676700F2D818 /* ProfileCollectionViewController.m */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -470,8 +480,10 @@
 				975D466722D3FD0100BC25CC /* main.m in Sources */,
 				973E92F722D6942200197854 /* PostViewController.m in Sources */,
 				97B026BC22D7AD0B00FCAB8A /* PostCell.m in Sources */,
+				97439E8722D9676700F2D818 /* ProfileCollectionViewController.m in Sources */,
 				975D465922D3FD0000BC25CC /* AppDelegate.m in Sources */,
 				97E77EF922D795FA0073E1EB /* HomeScreenViewController.m in Sources */,
+				97439E8A22D968FA00F2D818 /* ProfilePostCollectionViewCell.m in Sources */,
 				97439E5922D7DFA600F2D818 /* DetailsViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
