@@ -20,6 +20,7 @@
 		97439E7E22D9528E00F2D818 /* round profile icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 97439E7D22D9528E00F2D818 /* round profile icon.png */; };
 		97439E8722D9676700F2D818 /* ProfileCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 97439E8622D9676700F2D818 /* ProfileCollectionViewController.m */; };
 		97439E8A22D968FA00F2D818 /* ProfilePostCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 97439E8922D968FA00F2D818 /* ProfilePostCollectionViewCell.m */; };
+		97439E8C22D970BF00F2D818 /* launching_ig.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 97439E8B22D970BF00F2D818 /* launching_ig.jpg */; };
 		975D465922D3FD0000BC25CC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 975D465822D3FD0000BC25CC /* AppDelegate.m */; };
 		975D465C22D3FD0000BC25CC /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 975D465B22D3FD0000BC25CC /* ViewController.m */; };
 		975D465F22D3FD0000BC25CC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 975D465D22D3FD0000BC25CC /* Main.storyboard */; };
@@ -75,6 +76,7 @@
 		97439E8622D9676700F2D818 /* ProfileCollectionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ProfileCollectionViewController.m; sourceTree = "<group>"; };
 		97439E8822D968FA00F2D818 /* ProfilePostCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProfilePostCollectionViewCell.h; sourceTree = "<group>"; };
 		97439E8922D968FA00F2D818 /* ProfilePostCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ProfilePostCollectionViewCell.m; sourceTree = "<group>"; };
+		97439E8B22D970BF00F2D818 /* launching_ig.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = launching_ig.jpg; path = ../../../Downloads/launching_ig.jpg; sourceTree = "<group>"; };
 		975D465422D3FD0000BC25CC /* instagram-lauren.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "instagram-lauren.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		975D465722D3FD0000BC25CC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		975D465822D3FD0000BC25CC /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -194,6 +196,7 @@
 				97439E6B22D94D1800F2D818 /* icons8-heart-50.png */,
 				97439E6F22D94D3400F2D818 /* icons8-topic-50.png */,
 				975D466022D3FD0100BC25CC /* Assets.xcassets */,
+				97439E8B22D970BF00F2D818 /* launching_ig.jpg */,
 				975D466222D3FD0100BC25CC /* LaunchScreen.storyboard */,
 				975D466522D3FD0100BC25CC /* Info.plist */,
 				975D466622D3FD0100BC25CC /* main.m */,
@@ -363,6 +366,7 @@
 				97439E7422D94F4300F2D818 /* letters_login.jpg in Resources */,
 				97439E7022D94D3400F2D818 /* icons8-topic-50.png in Resources */,
 				97439E6C22D94D1800F2D818 /* icons8-heart-50.png in Resources */,
+				97439E8C22D970BF00F2D818 /* launching_ig.jpg in Resources */,
 				975D466122D3FD0100BC25CC /* Assets.xcassets in Resources */,
 				975D465F22D3FD0000BC25CC /* Main.storyboard in Resources */,
 			);
